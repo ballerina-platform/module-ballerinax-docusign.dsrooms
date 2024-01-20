@@ -1,16 +1,16 @@
 # Ballerina Docusign Rooms Connector
 
-[![Build](https://github.com/ballerina-platform/module-ballerinax-docusign.esign/actions/workflows/ci.yml/badge.svg)](https://github.com/ballerina-platform/module-ballerinax-docusign.esign/actions/workflows/ci.yml)
-[![Trivy](https://github.com/ballerina-platform/module-ballerinax-docusign.esign/actions/workflows/trivy-scan.yml/badge.svg)](https://github.com/ballerina-platform/module-ballerinax-docusign.esign/actions/workflows/trivy-scan.yml)
-[![codecov](https://codecov.io/gh/ballerina-platform/module-ballerinax-docusign.esign/branch/main/graph/badge.svg)](https://codecov.io/gh/ballerina-platform/module-ballerinax-docusign.esign)
-[![GraalVM Check](https://github.com/ballerina-platform/module-ballerinax-docusign.esign/actions/workflows/build-with-bal-test-graalvm.yml/badge.svg)](https://github.com/ballerina-platform/module-ballerinax-docusign.esign/actions/workflows/build-with-bal-test-graalvm.yml)
-[![GitHub Last Commit](https://img.shields.io/github/last-commit/ballerina-platform/module-ballerinax-docusign.esign.svg)](https://github.com/ballerina-platform/module-ballerinax-docusign.esign/commits/main)
-[![GitHub Issues](https://img.shields.io/github/issues/ballerina-platform/ballerina-library/module/docusign.esign.svg?label=Open%20Issues)](https://github.com/ballerina-platform/ballerina-library/labels/module%2Fdocusign.esign)
+[![Build](https://github.com/ballerina-platform/module-ballerinax-docusign.dsrooms/actions/workflows/ci.yml/badge.svg)](https://github.com/ballerina-platform/module-ballerinax-docusign.dsrooms/actions/workflows/ci.yml)
+[![Trivy](https://github.com/ballerina-platform/module-ballerinax-docusign.dsrooms/actions/workflows/trivy-scan.yml/badge.svg)](https://github.com/ballerina-platform/module-ballerinax-docusign.dsrooms/actions/workflows/trivy-scan.yml)
+[![codecov](https://codecov.io/gh/ballerina-platform/module-ballerinax-docusign.dsrooms/branch/main/graph/badge.svg)](https://codecov.io/gh/ballerina-platform/module-ballerinax-docusign.dsrooms)
+[![GraalVM Check](https://github.com/ballerina-platform/module-ballerinax-docusign.dsrooms/actions/workflows/build-with-bal-test-graalvm.yml/badge.svg)](https://github.com/ballerina-platform/module-ballerinax-docusign.dsrooms/actions/workflows/build-with-bal-test-graalvm.yml)
+[![GitHub Last Commit](https://img.shields.io/github/last-commit/ballerina-platform/module-ballerinax-docusign.dsrooms.svg)](https://github.com/ballerina-platform/module-ballerinax-docusign.dsrooms/commits/main)
+[![GitHub Issues](https://img.shields.io/github/issues/ballerina-platform/ballerina-library/module/docusign.dsrooms.svg?label=Open%20Issues)](https://github.com/ballerina-platform/ballerina-library/labels/module%2Fdocusign.dsrooms)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 The DocuSign Rooms connector is designed to handle e-signatures in complex documents like real estate and mortgage agreements. It provides developers with a better solution for managing and organizing agreements specific to real estate transactions. By leveraging the Rooms API, users can create a centralized and structured environment for handling property-related documents, simplifying collaboration and ensuring a smooth agreement process.
 
-- [docusign.dsrooms](ballerina/Module.md) - Perform DocuSign eSignature related operations
+- [docusign.dsrooms](ballerina/Module.md) - Perform DocuSign Rooms related operations
 
 ## Overview
 
