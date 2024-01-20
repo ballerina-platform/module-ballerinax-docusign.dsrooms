@@ -5,9 +5,9 @@ name = "docusign.dsrooms"
 version = "@toml.version@"
 license = ["Apache-2.0"]
 authors = ["Ballerina"]
-keywords = ["digital signature"]
+keywords = ["eSignature", "Cost/Freemium", "Documents", "Collaboration", "Digital Signature"]
 icon = "icon.png"
-repository = "https://github.com/ballerina-platform/module-ballerinax-docusign"
+repository = "https://github.com/ballerina-platform/module-ballerinax-docusign.dsrooms"
 
 [build-options]
 observabilityIncluded = true
