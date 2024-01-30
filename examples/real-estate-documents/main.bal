@@ -24,7 +24,7 @@ configurable string accountId = os:getEnv("ACCOUNT_ID");
 // The main function that demonstrates the usage of DSRooms APIs
 public function main() returns error? {
     // Create a new client for interacting with Docusign DSRooms APIs
-    rooms:Client docuSignClient = check new(
+    rooms:Client docuSignClient = check new (
         apiKeyConfig = {
             authorization: "Bearer " + authorization
         },
@@ -86,15 +86,4 @@ public function main() returns error? {
     // Get the list of offices
     rooms:OfficeSummaryList officesResponse = check docuSignClient->/v2/accounts/[accountId]/offices();
     io:println(officesResponse);
-
-    // // Create a new office
-    // rooms:OfficeForCreate newOffice = {
-    //     // Details of the new office
-    // };
-    // rooms:Office createdOffice = check docuSignClient->/v2/accounts/[accountId]/offices(newOffice);
-    // io:println(createdOffice);
-
-    // // Get information about a specific office
-    // rooms:Office specificOffice = check docuSignClient->/v2/accounts/[accountId]/offices/1234;
-    // io:println(specificOffice);
 }

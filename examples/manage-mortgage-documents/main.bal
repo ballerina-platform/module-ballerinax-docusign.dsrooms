@@ -22,11 +22,11 @@ configurable string authorization = os:getEnv("AUTHORIZATION");
 configurable string accountId = os:getEnv("ACCOUNT_ID");
 
 public function main() returns error? {
-    rooms:Client docuSignClient = check new(
+    rooms:Client docuSignClient = check new (
         apiKeyConfig = {
             authorization: "Bearer " + authorization
         },
-        config = { 
+        config = {
             auth: {
                 token: authorization
             }
