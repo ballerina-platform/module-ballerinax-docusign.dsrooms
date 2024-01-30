@@ -97,7 +97,7 @@ You can now utilize the operations available within the connector.
 
 ```ballerina
 public function main() returns error? {
-    dsrooms:Client docusignClient = ...//;
+    dsrooms:Client docusignClient = ...// Initialize the DocuSign Click connector;
 
     dsrooms:EnvelopeSummary envResult = check docusignClient->/accounts/[accountId]/envelopes.post(
     {
@@ -129,5 +129,8 @@ public function main() returns error? {
 
 The DocuSign Rooms connector provides practical examples illustrating usage in various scenarios. Explore these [examples](https://github.com/ballerina-platform/module-ballerinax-docusign.dsrooms/tree/main/examples).
 
-1. [Manage Mortgage Documents with DocuSign Rooms](https://github.com/ballerina-platform/module-ballerinax-googleapis.docusign.dsrooms/tree/main/examples/manage_mortgage_documents)
+1. [Manage Mortgage Documents with DocuSign Rooms](https://github.com/ballerina-platform/module-ballerinax-docusign.dsrooms/tree/main/examples/manage_mortgage_documents)
     This example shows how to use DocuSign Rooms APIs to efficiently manage mortage documents
+
+2. [Manage Real Estate Documents with DocuSign Rooms](https://github.com/ballerina-platform/module-ballerinax-docusign.dsrooms/tree/main/examples/real-estate-documents)
+    This example shows how to use DocuSign Rooms APIs to efficiently manage real estate documents
