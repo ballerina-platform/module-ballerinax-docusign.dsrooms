@@ -288,7 +288,7 @@ service /restapi on ep0 {
     # BadRequestStringApierrorXml (Bad request. See ErrorCode and Message for details)
     # UnauthorizedStringApierrorXml (Not authorized to make this request.)
     resource function put v2/accounts/[string accountId]/users/[int:Signed32 userId](@http:Payload UserForUpdate|xml payload) returns string|User|xml|BadRequestStringApierrorXml|UnauthorizedStringApierrorXml {
-        return  {
+        return {
             userId: 1,
             email: "john.doe@example.com",
             firstName: "John",

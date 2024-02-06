@@ -20,7 +20,7 @@ Client docuSignClient = test:mock(Client);
 
 @test:BeforeSuite
 function initializeClientsForMockServer() returns error? {
-    docuSignClient = check new(
+    docuSignClient = check new (
         {
             authorization: "de0d6e8d-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
         },
@@ -34,12 +34,12 @@ function initializeClientsForMockServer() returns error? {
 function testGetAccountDetails() returns error? {
     string account_id = "de0d6e8d-xxxx-xxxx-xxxx-xxxxxxxxxxxx";
     AccountSummary expectedPayload = {
-            companyId: 123,
-            name: "ABC Company",
-            companyVersion: "v6",
-            docuSignAccountGuid: "abc123",
-            defaultFieldSetId: "def456",
-            requireOfficeLibraryAssignments: true
+        companyId: 123,
+        name: "ABC Company",
+        companyVersion: "v6",
+        docuSignAccountGuid: "abc123",
+        defaultFieldSetId: "def456",
+        requireOfficeLibraryAssignments: true
     };
     AccountSummary response = check docuSignClient->/v2/accounts/[account_id];
     test:assertEquals(response, expectedPayload);
@@ -60,7 +60,7 @@ function testGetAccountInformation() returns error? {
     };
     AccountSummary response = check docuSignClient->/v2/accounts/[account_id];
     test:assertEquals(expectedPayload, response);
-    
+
 }
 
 @test:Config {
@@ -136,7 +136,7 @@ function testGetESignPermissionProfiles() returns error? {
     string account_id = "de0d6e8d-xxxx-xxxx-xxxx-xxxxxxxxxxxx";
     ESignPermissionProfileList response = check docuSignClient->/v2/accounts/[account_id]/esign_permission_profiles();
     test:assertEquals(expectedPayload, response);
-    
+
 }
 
 @test:Config {
@@ -149,7 +149,7 @@ function testCreateExternalFormFillSession() returns error? {
     string account_id = "de0d6e8d-xxxx-xxxx-xxxx-xxxxxxxxxxxx";
     ExternalFormFillSession response = check docuSignClient->/v2/accounts/[account_id]/external_form_fill_sessions.post({roomId: 0});
     test:assertEquals(expectedPayload, response);
-    
+
 }
 
 @test:Config {
